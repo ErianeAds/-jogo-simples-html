@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jogo de Perguntas</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="questions.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div id="app">
+    <div id="start-screen" class="start-screen">
+      <h1 class="title">Jogo de Perguntas</h1>
+      <div class="overlay">
+        <h2 class="question">Pronto para jogar?</h2>
+        <button id="start-button" class="btn-start"></button>
+      </div>
+    </div>
+
+    <div id="question-screen" class="perguntas-screen" style="display:none;">
+      <div class="card">
+        <h2 id="question-text" class="question"></h2>
+         </div>
+        <div class="buttons">
+          <button id="btn-correct" class="btn correct">ACERTOU</button>
+          <button id="btn-wrong" class="btn wrong">ERROU</button>
+          <button id="btn-skip" class="btn skip">PULAR</button>
+       
+      </div>
+    </div>
+
+    <div id="final-screen" class="card-final" style="display:none;">
+      <img src="assets/img/tela-final.jpg" alt="Fim de Jogo" class="final-image"/>
+      <div class="final-content">
+        <h2 class="placar">Placar da Rodada</h2>
+        <p id="final-score">Você acertou X de 5 perguntas respondidas.</p>
+        <div class="button-group">
+          <button id="btn-continue" class="btn correct">CONTINUAR</button>
+          <button id="btn-restart" class="btn wrong">RECOMEÇAR</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
